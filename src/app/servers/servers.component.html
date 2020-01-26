@@ -22,5 +22,7 @@
 <ng-template #noServer>
     <p>Server needs to be created.</p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
+<!-- To use index, to the following
+<app-server *ngFor="let server of servers; let i = index;"></app-server> -->
