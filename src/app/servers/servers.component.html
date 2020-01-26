@@ -1,11 +1,16 @@
 <h2>This is the Servers Component</h2>
 <label>Enter Server Name</label>
 <!-- User enters the server name which should be created -->
+<!-- <input
+    type="text"
+    class="form-control"
+    (input)="onUpdateServerName($event)"> -->
+
 <input
     type="text"
     class="form-control"
-    (input)="onUpdateServerName($event)">
-<p>{{ serverName }}</p>
+    [(ngModel)]="serverName">
+<!-- <p>{{ serverName }}</p> -->
 <br>
 <button
     class="btn btn-primary"
